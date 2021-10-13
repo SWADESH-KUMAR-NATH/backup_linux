@@ -1,0 +1,8 @@
+| units: 20 tech: scmos format: MIT
+p pc blb vdd 2 18 36 -38
+p pc vdd bl 2 18 20 -38
+p pc bl blb 2 18 28 -38
+R vdd 28
+R pc 267
+C w_0_n47# GND 4.52
+R w_0_n47# 1789

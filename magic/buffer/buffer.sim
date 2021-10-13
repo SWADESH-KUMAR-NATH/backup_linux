@@ -1,0 +1,10 @@
+| units: 20 tech: scmos format: MIT
+p inverter_0/in vdd! inverter_1/in 2 10 2 9
+n inverter_0/in gnd! inverter_1/in 2 5 2 -8
+p inverter_1/in vdd! inverter_1/out 2 10 20 9
+n inverter_1/in gnd! inverter_1/out 2 5 20 -8
+R inverter_1/in 103
+R gnd! 62
+R inverter_0/in 93
+C vdd! GND 3.31
+R vdd! 1819

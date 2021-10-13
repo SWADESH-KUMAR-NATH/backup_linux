@@ -1,0 +1,24 @@
+timestamp 1627364388
+version 8.3
+tech scmos
+style TSMC0.35um(tsmc35)from:t11c
+scale 1000 1 20
+resistclasses 3700 2800 1018000 1018000 1 6000 6000 80 70 80 40
+node "a_66_9#" 103 520.355 66 9 ndif 30 22 60 32 0 0 0 0 0 0 78 74 0 0 144 80 0 0 0 0 0 0
+node "a_49_9#" 103 520.355 49 9 ndif 30 22 60 32 0 0 0 0 0 0 78 74 0 0 144 80 0 0 0 0 0 0
+node "out" 104 509.651 43 18 pc 30 22 60 32 0 0 0 0 0 0 78 74 0 0 136 84 196 106 0 0 0 0
+node "vdd" 2375 3823.2 35 20 nw 96 96 180 96 1620 174 0 0 0 0 0 0 0 0 450 186 0 0 0 0 0 0
+substrate "gnd" 0 0 41 9 ndif 90 66 96 96 0 0 0 0 0 0 0 0 0 0 402 162 0 0 0 0 0 0
+cap "a_49_9#" "out" 208.544
+cap "out" "vdd" 509.682
+cap "a_49_9#" "vdd" 545.129
+cap "a_66_9#" "out" 208.544
+cap "a_49_9#" "a_66_9#" 54.984
+cap "a_66_9#" "vdd" 545.129
+device mosfet nfet 81 9 82 10 2 5 "gnd" "a_66_9#" 4 0 "gnd" 5 0 "out" 5 0
+device mosfet nfet 64 9 65 10 2 5 "gnd" "a_49_9#" 4 0 "gnd" 5 0 "a_66_9#" 5 0
+device mosfet nfet 47 9 48 10 2 5 "gnd" "out" 4 0 "gnd" 5 0 "a_49_9#" 5 0
+device mosfet pfet 81 26 82 27 2 10 "vdd" "a_66_9#" 4 0 "vdd" 10 0 "out" 10 0
+device mosfet pfet 64 26 65 27 2 10 "vdd" "a_49_9#" 4 0 "vdd" 10 0 "a_66_9#" 10 0
+device mosfet pfet 47 26 48 27 2 10 "vdd" "out" 4 0 "vdd" 10 0 "a_49_9#" 10 0
+subcap "a_66_9#" -189.008

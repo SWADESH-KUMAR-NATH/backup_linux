@@ -1,0 +1,19 @@
+### Buffer Specification ###
+
+Test-Bench
+----------
+Temperature 27
+v0      vdd     gnd     dc      5
+v1      inverter_0/in      gnd     pulse   0       5       1.5n    100p    100p    3n      6n
+
+Pre-Layout
+----------
+tplh	6.884700e-11
+tphl	6.116639e-11
+
+Post-Layout
+-----------
+tplh	7.681138e-11
+tphl	6.924524e-11
+
+

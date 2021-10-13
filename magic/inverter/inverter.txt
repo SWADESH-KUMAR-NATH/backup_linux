@@ -1,0 +1,24 @@
+##### INVERTER SPECIFICATIONS #####
+
+SPECS	PMOS	NMOS
+-----------------------
+w	2u	1u
+l	0.4u	0.4u
+MODEL	scmosp	scmosn
+
+Test-Bench
+----------
+Temperature 27
+v0 vdd gnd dc 5
+v1 in gnd pulse 0 5 1.5n 100p 100p 3n 6n
+
+Pre-Layout
+----------
+tplh	2.534286e-11
+tphl	2.070742e-11
+
+Post-Layout
+-----------
+tplh	2.739517e-11
+tphl	2.285992e-11
+

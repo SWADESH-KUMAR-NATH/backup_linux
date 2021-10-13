@@ -1,0 +1,109 @@
+magic
+tech scmos
+timestamp 1633907630
+<< nwell >>
+rect -282 -22 -223 29
+<< ntransistor >>
+rect -258 51 -256 69
+rect -250 51 -248 69
+rect -87 27 -69 29
+rect -21 27 -3 29
+<< ndiffusion >>
+rect -264 68 -258 69
+rect -264 52 -263 68
+rect -259 52 -258 68
+rect -264 51 -258 52
+rect -256 68 -250 69
+rect -256 52 -255 68
+rect -251 52 -250 68
+rect -256 51 -250 52
+rect -248 68 -242 69
+rect -248 52 -247 68
+rect -243 52 -242 68
+rect -248 51 -242 52
+rect -87 34 -69 35
+rect -87 30 -86 34
+rect -70 30 -69 34
+rect -87 29 -69 30
+rect -21 34 -3 35
+rect -21 30 -20 34
+rect -4 30 -3 34
+rect -21 29 -3 30
+rect -87 26 -69 27
+rect -87 22 -86 26
+rect -70 22 -69 26
+rect -87 21 -69 22
+rect -21 26 -3 27
+rect -21 22 -20 26
+rect -4 22 -3 26
+rect -21 21 -3 22
+<< ndcontact >>
+rect -263 52 -259 68
+rect -255 52 -251 68
+rect -247 52 -243 68
+rect -86 30 -70 34
+rect -20 30 -4 34
+rect -86 22 -70 26
+rect -20 22 -4 26
+<< polysilicon >>
+rect -258 69 -256 71
+rect -250 69 -248 71
+rect -258 49 -256 51
+rect -250 49 -248 51
+rect -90 27 -87 29
+rect -69 27 -67 29
+rect -23 27 -21 29
+rect -3 27 0 29
+<< polycontact >>
+rect -259 45 -255 49
+rect -251 45 -247 49
+rect -94 26 -90 30
+rect 0 26 4 30
+<< metal1 >>
+rect -263 68 -259 71
+rect -247 68 -243 71
+rect -259 31 -255 45
+rect -266 27 -255 31
+rect -251 31 -247 45
+rect -251 27 -240 31
+rect -94 1 -90 26
+rect 0 1 4 26
+rect -94 -3 -83 1
+rect -7 -3 4 1
+use inv  inv_3
+timestamp 1633809539
+transform -1 0 -237 0 -1 25
+box -13 -22 13 23
+use inv  inv_1
+timestamp 1633809539
+transform -1 0 -80 0 -1 -5
+box -13 -22 13 23
+use nand  nand_1
+timestamp 1633816195
+transform -1 0 -59 0 -1 -8
+box -17 -34 17 20
+use nand  nand_0
+timestamp 1633816195
+transform 1 0 -31 0 -1 -8
+box -17 -34 17 20
+use inv  inv_0
+timestamp 1633809539
+transform 1 0 -10 0 -1 -5
+box -13 -22 13 23
+use sa  sa_0 ~/lab/magic/sram/sa
+timestamp 1633804522
+transform 1 0 -166 0 1 210
+box -25 -131 33 -62
+use inv  inv_2
+timestamp 1633809539
+transform 1 0 -269 0 -1 25
+box -13 -22 13 23
+use nand  nand_2
+timestamp 1633816195
+transform -1 0 -265 0 1 -16
+box -17 -34 17 20
+use nand  nand_3
+timestamp 1633816195
+transform 1 0 -240 0 1 -16
+box -17 -34 17 20
+<< end >>

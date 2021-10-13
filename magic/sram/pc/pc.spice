@@ -1,0 +1,19 @@
+* SPICE3 file created from pc.ext - technology: scmos
+.subckt pre_charge_swad blb pc bl
+M1000 vdd pc blb vdd scmosp w=3.6u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1001 bl pc vdd vdd scmosp w=3.6u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1002 blb pc bl vdd scmosp w=3.6u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+C0 blb bl 0.23fF
+C1 blb vdd 0.59fF
+C2 blb pc 0.07fF
+C3 bl vdd 0.59fF
+C4 pc bl 0.07fF
+C5 pc vdd 0.69fF
+C6 blb gnd 0.01fF
+C7 bl gnd 0.01fF
+C8 pc gnd 0.19fF
+C9 vdd gnd 4.44fF
+.ends pre_charge_swad

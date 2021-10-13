@@ -1,0 +1,13 @@
+| units: 20 tech: scmos format: MIT
+n a_62_66# gnd a_78_66# 2 5 76 66
+p out a_62_66# vdd 2 10 68 83
+p a_62_66# vdd a_78_66# 2 10 76 83
+n a_78_66# gnd out 2 5 93 66
+n out a_62_66# gnd 2 5 68 66
+p a_78_66# vdd out 2 10 93 83
+R a_78_66# 103
+R a_62_66# 103
+R out 104
+C vdd GND 3.25
+R vdd 2008
+R gnd 73

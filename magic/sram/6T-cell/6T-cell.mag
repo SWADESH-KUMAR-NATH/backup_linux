@@ -1,0 +1,110 @@
+magic
+tech scmos
+timestamp 1632842315
+<< nwell >>
+rect -16 -4 42 17
+<< ntransistor >>
+rect -7 -16 -3 -13
+rect 8 -18 10 -12
+rect 16 -18 18 -12
+rect 29 -16 33 -13
+<< ptransistor >>
+rect 4 3 10 6
+rect 16 3 22 6
+<< ndiffusion >>
+rect -2 -13 8 -12
+rect -8 -16 -7 -13
+rect -3 -16 -2 -13
+rect 5 -17 8 -13
+rect -2 -18 8 -17
+rect 10 -13 16 -12
+rect 10 -17 11 -13
+rect 15 -17 16 -13
+rect 10 -18 16 -17
+rect 18 -13 28 -12
+rect 18 -17 21 -13
+rect 28 -16 29 -13
+rect 33 -16 34 -13
+rect 18 -18 28 -17
+<< pdiffusion >>
+rect 3 3 4 6
+rect 10 3 11 6
+rect 15 3 16 6
+rect 22 3 23 6
+<< ndcontact >>
+rect -12 -17 -8 -13
+rect -2 -17 5 -13
+rect 11 -17 15 -13
+rect 21 -17 28 -13
+rect 34 -17 38 -13
+<< pdcontact >>
+rect -1 2 3 6
+rect 11 3 15 7
+rect 23 2 27 6
+<< psubstratepcontact >>
+rect 1 -26 5 -22
+rect 21 -26 25 -22
+<< nsubstratencontact >>
+rect -1 10 3 14
+rect 23 10 27 14
+<< polysilicon >>
+rect 4 6 10 8
+rect 16 6 22 8
+rect 4 1 10 3
+rect 8 -6 10 1
+rect -7 -13 -3 -8
+rect 8 -12 10 -10
+rect 16 1 22 3
+rect 16 0 20 1
+rect 16 -12 18 -4
+rect -7 -18 -3 -16
+rect 29 -13 33 -8
+rect 29 -18 33 -16
+rect 8 -20 10 -18
+rect 16 -20 18 -18
+<< polycontact >>
+rect -7 -8 -3 -4
+rect 6 -10 10 -6
+rect 16 -4 20 0
+rect 29 -8 33 -4
+<< metal1 >>
+rect -13 -13 -10 17
+rect 3 10 11 14
+rect 15 10 23 14
+rect 11 7 15 10
+rect 0 0 3 2
+rect 0 -3 16 0
+rect 0 -13 3 -3
+rect 23 -7 26 2
+rect 10 -10 26 -7
+rect 23 -13 26 -10
+rect 36 -13 39 17
+rect -13 -17 -12 -13
+rect 38 -17 39 -13
+rect -13 -29 -10 -17
+rect 11 -22 15 -17
+rect 5 -26 11 -22
+rect 15 -26 21 -22
+rect 36 -29 39 -17
+<< m2contact >>
+rect 11 10 15 14
+rect -7 -8 -3 -4
+rect 29 -8 33 -4
+rect 11 -26 15 -22
+<< metal2 >>
+rect -16 10 11 14
+rect 15 10 42 14
+rect -16 -8 -7 -4
+rect -3 -8 29 -4
+rect 33 -8 42 -4
+rect -16 -26 11 -22
+rect 15 -26 42 -22
+<< labels >>
+rlabel m2contact 13 12 13 12 5 vdd
+rlabel m2contact 13 -24 13 -24 1 gnd
+rlabel metal1 -12 1 -11 2 3 bl
+rlabel metal1 37 1 38 2 7 blb
+rlabel metal2 -15 -6 -15 -6 3 wl
+rlabel metal1 1 -2 2 -1 1 q1
+rlabel metal1 24 -2 25 -1 1 q2
+<< end >>

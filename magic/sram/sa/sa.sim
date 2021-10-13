@@ -1,0 +1,16 @@
+| units: 20 tech: scmos format: MIT
+p r_en sab blb 2 24 19 -91
+p r_en bl sa 2 24 -12 -91
+n sa a_n2_n124# sab 2 9 8 -114
+p sa vdd sab 2 18 8 -91
+p sab sa vdd 2 18 -1 -91
+n sab sa a_n2_n124# 2 9 -1 -114
+n r_en gnd a_n2_n124# 2 9 -1 -125
+R a_n2_n124# 23
+R blb 13
+R sab 149
+R sa 149
+R bl 13
+R r_en 269
+C vdd GND 4.94
+R vdd 1651

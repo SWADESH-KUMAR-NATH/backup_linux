@@ -1,0 +1,40 @@
+* SPICE3 file created from sa.ext - technology: scmos
+.subckt sense_amp_swad blb bl sa sab r_en
+M1000 blb r_en sab vdd scmosp w=4.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1001 sa r_en bl vdd scmosp w=4.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1002 sab sa a_n2_n124# gnd scmosn w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1003 sab sa vdd vdd scmosp w=3.6u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1004 vdd sab sa vdd scmosp w=3.6u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1005 a_n2_n124# sab sa gnd scmosn w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1006 a_n2_n124# r_en gnd gnd scmosn w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+C0 vdd blb 0.29fF
+C1 r_en a_n2_n124# 0.04fF
+C2 sa bl 0.23fF
+C3 vdd bl 0.29fF
+C4 sa r_en 0.28fF
+C5 r_en sab 0.27fF
+C6 vdd r_en 0.46fF
+C7 sa a_n2_n124# 0.07fF
+C8 a_n2_n124# sab 0.15fF
+C9 r_en blb 0.31fF
+C10 sa sab 0.36fF
+C11 vdd sa 0.66fF
+C12 r_en bl 0.41fF
+C13 vdd sab 0.45fF
+C14 sab blb 0.23fF
+C15 a_n2_n124# gnd 0.05fF
+C16 blb gnd 0.32fF
+C17 sab gnd 0.44fF
+C18 sa gnd 0.31fF
+C19 bl gnd 0.31fF
+C20 r_en gnd 1.04fF
+C21 vdd gnd 4.94fF
+.ends sense_amp_swad
+

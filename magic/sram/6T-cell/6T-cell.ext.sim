@@ -1,0 +1,13 @@
+| units: 20 tech: scmos format: MIT
+n q1 gnd q2 2 6 16 -17
+n wl bl q1 4 3 -6 -15
+p q1 vdd q2 6 3 16 3
+n wl q2 blb 4 3 29 -15
+p q2 q1 vdd 6 3 4 3
+n q2 q1 gnd 2 6 8 -17
+R wl 58
+R q1 75
+R q2 86
+C vdd GND 2.86
+R vdd 2841
+R gnd 22

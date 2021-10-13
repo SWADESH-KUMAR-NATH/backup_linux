@@ -1,0 +1,19 @@
+Flattening unmatched subcell inv_swad in circuit ring_oscillator_swad (1)(3 instances)
+Flattening unmatched subcell ring_oscillator_swad in circuit ring_oscillator_sue2.sp (1)(1 instance)
+
+Subcircuit summary:
+Circuit 1: ring_oscillator.spice           |Circuit 2: ring_oscillator_sue2.sp         
+-------------------------------------------|-------------------------------------------
+vsrc (1)                                   |vsrc (1)                                   
+scmosn (3)                                 |scmosn (3)                                 
+scmosp (3)                                 |scmosp (3)                                 
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+Cells have no pins;  pin matching not needed.
+Device classes ring_oscillator.spice and ring_oscillator_sue2.sp are equivalent.
+Circuits match uniquely.

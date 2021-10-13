@@ -1,0 +1,7 @@
+blb 33 -15 ndif
+bl -11 -16 ndc
+wl -6 -17 p
+a_n3_n16# -2 -15 ndif
+a_4_1# 4 1 p
+vdd -15 -3 nw
+gnd 1 -25 poc

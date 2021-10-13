@@ -1,0 +1,17 @@
+timestamp 1627372718
+version 8.3
+tech scmos
+style TSMC0.35um(tsmc35)from:t11c
+scale 1000 1 20
+resistclasses 3700 2800 1018000 1018000 1 6000 6000 80 70 80 40
+use inverter inverter_1 1 0 -34 0 1 25
+use inverter inverter_0 1 0 -52 0 1 25
+node "m1_5_0#" 0 140.084 5 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44 30 0 0 0 0 0 0
+substrate "w_n1073741817_n1073741817#" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "inverter_1/gnd!" "inverter_1/in" 34.365
+cap "inverter_1/vdd!" "inverter_1/in" 73.87
+merge "inverter_0/vdd!" "inverter_1/vdd!" -509.76 0 0 0 0 -216 -70 0 0 0 0 0 0 0 0 0 -12 0 0 0 0 0 0
+merge "inverter_0/gnd!" "inverter_1/gnd!" -26.712 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0 0 0
+merge "inverter_1/gnd!" "w_n1073741817_n1073741817#"
+merge "inverter_0/out" "inverter_1/in" -121.198 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -28 0 0 0 0 0 0
+merge "inverter_1/in" "m1_5_0#"

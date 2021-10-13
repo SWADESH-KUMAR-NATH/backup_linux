@@ -1,0 +1,16 @@
+Flattening unmatched subcell inv_swad in circuit inverter_sue2.sp (1)(1 instance)
+
+Subcircuit summary:
+Circuit 1: inverter.spice                  |Circuit 2: inverter_sue2.sp                
+-------------------------------------------|-------------------------------------------
+scmosp (1)                                 |scmosp (1)                                 
+scmosn (1)                                 |scmosn (1)                                 
+vsrc (2)                                   |vsrc (2)                                   
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes inverter.spice and inverter_sue2.sp are equivalent.
+Circuits match uniquely.

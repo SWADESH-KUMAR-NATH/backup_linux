@@ -1,0 +1,6 @@
+# shell scripting
+m="i am a rock *"
+echo $m
+echo "$m"
+
+

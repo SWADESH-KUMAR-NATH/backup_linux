@@ -1,0 +1,39 @@
+* SPICE3 file created from ring_oscillator1.ext - technology: scmos
+.lib /home/swadesh/cad/eda-technology/scn4m_subm/models/scn4m_cnrs_bsim3v1.lib nom
+.temp 27
+.global vdd gnd
+v0      vdd     gnd     dc      5
+
+M1000 a_78_66# a_62_66# gnd gnd scmosn w=1u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1001 vdd out a_62_66# vdd scmosp w=2u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1002 a_78_66# a_62_66# vdd vdd scmosp w=2u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1003 out a_78_66# gnd gnd scmosn w=1u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1004 gnd out a_62_66# gnd scmosn w=1u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1005 out a_78_66# vdd vdd scmosp w=2u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+C0 a_62_66# vdd 0.40fF
+C1 a_62_66# a_78_66# 0.05fF
+C2 out vdd 0.55fF
+C3 out a_78_66# 0.12fF
+C4 a_78_66# vdd 0.48fF
+C5 a_62_66# out 0.33fF
+C6 a_78_66# gnd 0.61fF
+C7 a_62_66# gnd 0.49fF
+C8 out gnd 0.38fF
+C9 vdd gnd 3.25fF
+
+.tran 5p 5n
+.control
+run
+plot v(out)
+.endc
+
+.measure tran time_period trig v(out) val=2.5 rise=1 targ v(out) val=2.5 rise=2
+
+.end
+

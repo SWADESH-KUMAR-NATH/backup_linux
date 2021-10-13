@@ -1,0 +1,45 @@
+* SPICE3 file created from buffer.ext - technology: scmos
+.lib /home/swadesh/cad/eda-technology/scn4m_subm/models/scn4m_cnrs_bsim3v1.lib nom
+
+.subckt inverter in gnd out vdd
+M1000 out in vdd vdd scmosp w=2u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1001 out in gnd gnd scmosn w=1u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+C0 out vdd 0.19fF
+C1 in vdd 0.28fF
+C2 in out 0.05fF
+C3 out gnd 0.10fF
+C4 in gnd 0.24fF
+C5 vdd gnd 1.66fF
+.ends
+
+
+* Top level circuit buffer
+
+Xinverter_0 inverter_0/in gnd inverter_1/in vdd inverter
+Xinverter_1 inverter_1/in gnd inverter_1/out vdd inverter
+C0 vdd inverter_1/in 0.07fF
+C1 inverter_1/out gnd 0.10fF
+C2 inverter_1/in gnd 0.51fF
+C3 inverter_0/in gnd 0.24fF
+C4 vdd gnd 3.31fF
+
+* Test-Bench *
+.temp 27
+.global vdd gnd
+
+v0      vdd     gnd     dc      5
+v1      inverter_0/in      gnd     pulse   0       5       1.5n    100p    100p    3n      6n
+
+.tran 5p 15n
+.control
+run
+plot v("inverter_0/in") v("inverter_1/out")+6
+.endc
+
+.measure tran tplh trig v(inverter_0/in) val=2.5 fall=1 targ v(inverter_1/out) val=2.5 fall=1
+.measure tran tphl trig v(inverter_0/in) val=2.5 rise=1 targ v(inverter_1/out) val=2.5 rise=1
+
+.end
+

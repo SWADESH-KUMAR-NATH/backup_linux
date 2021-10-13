@@ -1,0 +1,6 @@
+# input program
+#echo -n "Enter your name : "
+#read NAME
+#echo "Hi "$NAME "Good morning"
+name="Dr Joe Doe"
+args $name

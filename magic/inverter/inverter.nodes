@@ -1,0 +1,4 @@
+out 56 -33 ndif
+in 50 -24 pc
+vdd! 42 -22 nw
+gnd! 48 -33 ndif

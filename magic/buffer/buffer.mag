@@ -1,0 +1,17 @@
+magic
+tech scmos
+timestamp 1627372718
+<< metal1 >>
+rect 5 0 16 4
+use inverter  inverter_1
+timestamp 1627259878
+transform 1 0 -34 0 1 25
+box 42 -43 68 4
+use inverter  inverter_0
+timestamp 1627259878
+transform 1 0 -52 0 1 25
+box 42 -43 68 4
+<< labels >>
+rlabel space -3 2 -3 2 1 buff_in
+rlabel space 25 2 25 2 1 buff_out
+<< end >>

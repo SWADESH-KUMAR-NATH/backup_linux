@@ -1,0 +1,5 @@
+inverter_1/out 22 -8 ndif
+inverter_1/in 16 1 pc
+gnd! 14 -8 ndif
+inverter_0/in -2 1 pc
+vdd! 8 3 nw

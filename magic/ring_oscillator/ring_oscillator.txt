@@ -1,0 +1,26 @@
+# Ring Oscillator Specification #
+
+Pre-Layout
+----------
+time_period	2.102515e-10
+frequency	4.756208e+9
+
+Post-Layout (with parasitics)
+-----------
+[ ring_oscillator.spice ]
+time_period	2.368814e-10
+frequency	4.237288e+9
+
+[ ring_0scillator1.spice ]
+time_period	2.370740e-10
+frequency	4.218092e+9
+
+Post-Layout (without parasitics)
+-----------
+time_period     2.312480e-10
+frequency       4.324361e+9
+
+
+
+
+

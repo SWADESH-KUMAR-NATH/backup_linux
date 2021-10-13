@@ -1,0 +1,41 @@
+proc SCHEMATIC_inv_swad {} {
+make nmos4 -name M0 -l 0.4u -origin {3500 680}
+make pmos4 -name M1 -w 2.5u -l 0.4u -origin {3500 520}
+make output -name out -origin {3570 600}
+make input -name in -origin {3310 600}
+make global -name gnd -origin {3500 790}
+make global -orient RXY -name vdd -origin {3500 420}
+  make_wire 3440 520 3360 520
+  make_wire 3360 680 3440 680
+  make_wire 3500 480 3540 480
+  make_wire 3540 480 3540 520
+  make_wire 3540 520 3500 520
+  make_wire 3500 680 3540 680
+  make_wire 3540 720 3500 720
+  make_wire 3540 680 3540 720
+  make_wire 3570 600 3500 600
+  make_wire 3310 600 3360 600
+  make_wire 3360 600 3360 520
+  make_wire 3360 600 3360 680
+  make_wire 3500 560 3500 600
+  make_wire 3500 600 3500 640
+  make_wire 3500 790 3500 720
+  make_wire 3500 420 3500 480
+}
+
+proc ICON_inv_swad args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x} {example_param 1.0}}
+icon_term -type input -origin {0 0} -name in
+icon_term -type output -origin {100 0} -name out
+icon_property -origin {10 0} -label in
+icon_property -origin {90 0} -anchor e -label out
+icon_property -origin {-90 -40} -label {$name}
+icon_property -origin {-90 -20} -label inv_swad
+icon_property -origin {-90 40} -label {example_param=$example_param}
+  icon_property -origin {-90 100} -type user -name name -default x
+  icon_property -origin {-90 120} -type user -name example_param -default 1.0
+  icon_line 0 -40 0 40 80 0 0 -40
+  icon_arc 80 -10 100 10 -start 209 -extent 302
+  icon_arc 80 -10 100 10 -start 0 -extent 270
+}
+
