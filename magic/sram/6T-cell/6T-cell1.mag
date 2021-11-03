@@ -1,0 +1,114 @@
+magic
+tech scmos
+timestamp 1635738734
+<< nwell >>
+rect -76 25 -18 46
+<< ntransistor >>
+rect -67 11 -63 14
+rect -52 9 -50 15
+rect -44 9 -42 15
+rect -31 11 -27 14
+<< ptransistor >>
+rect -56 32 -50 35
+rect -44 32 -38 35
+<< ndiffusion >>
+rect -62 14 -52 15
+rect -68 11 -67 14
+rect -63 11 -62 14
+rect -55 10 -52 14
+rect -62 9 -52 10
+rect -50 14 -44 15
+rect -50 10 -49 14
+rect -45 10 -44 14
+rect -50 9 -44 10
+rect -42 14 -32 15
+rect -42 10 -39 14
+rect -32 11 -31 14
+rect -27 11 -26 14
+rect -42 9 -32 10
+<< pdiffusion >>
+rect -57 32 -56 35
+rect -50 32 -49 35
+rect -45 32 -44 35
+rect -38 32 -37 35
+<< ndcontact >>
+rect -72 10 -68 14
+rect -62 10 -55 14
+rect -49 10 -45 14
+rect -39 10 -32 14
+rect -26 10 -22 14
+<< pdcontact >>
+rect -61 31 -57 35
+rect -49 32 -45 36
+rect -37 31 -33 35
+<< psubstratepcontact >>
+rect -59 1 -55 5
+rect -39 1 -35 5
+<< nsubstratencontact >>
+rect -61 39 -57 43
+rect -37 39 -33 43
+<< polysilicon >>
+rect -56 35 -50 37
+rect -44 35 -38 37
+rect -56 30 -50 32
+rect -52 21 -50 30
+rect -67 14 -63 21
+rect -52 15 -50 17
+rect -44 30 -38 32
+rect -44 29 -40 30
+rect -44 15 -42 25
+rect -67 9 -63 11
+rect -31 14 -27 21
+rect -31 9 -27 11
+rect -52 7 -50 9
+rect -44 7 -42 9
+<< polycontact >>
+rect -67 21 -63 25
+rect -54 17 -50 21
+rect -44 25 -40 29
+rect -31 21 -27 25
+<< metal1 >>
+rect -73 14 -70 46
+rect -57 39 -49 43
+rect -45 39 -37 43
+rect -49 36 -45 39
+rect -60 29 -57 31
+rect -60 26 -44 29
+rect -60 14 -57 26
+rect -37 20 -34 31
+rect -50 17 -34 20
+rect -37 14 -34 17
+rect -24 14 -21 46
+rect -73 10 -72 14
+rect -22 10 -21 14
+rect -73 -2 -70 10
+rect -49 5 -45 10
+rect -55 1 -49 5
+rect -45 1 -39 5
+rect -24 -2 -21 10
+<< m2contact >>
+rect -49 39 -45 43
+rect -67 21 -63 25
+rect -31 21 -27 25
+rect -49 1 -45 5
+<< metal2 >>
+rect -76 39 -49 43
+rect -45 39 -18 43
+rect -76 21 -67 25
+rect -63 21 -31 25
+rect -27 21 -18 25
+rect -76 1 -49 5
+rect -45 1 -18 5
+use 6T-cell  6T-cell_0
+timestamp 1635593005
+transform 1 0 -47 0 1 8
+box 47 -8 105 38
+<< labels >>
+rlabel m2contact -47 41 -47 41 5 vdd
+rlabel metal1 -72 30 -71 31 3 bl
+rlabel metal1 -23 30 -22 31 7 blb
+rlabel metal1 -59 27 -58 28 1 q1
+rlabel metal1 -36 27 -35 28 1 q2
+rlabel m2contact -47 3 -47 3 1 gnd
+rlabel metal2 -75 23 -75 23 3 wl
+<< end >>

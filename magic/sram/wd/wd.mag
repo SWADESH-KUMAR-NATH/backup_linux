@@ -1,109 +1,177 @@
 magic
 tech scmos
-timestamp 1633907630
+timestamp 1635738960
 << nwell >>
-rect -282 -22 -223 29
+rect -282 19 -261 21
+rect -257 19 -223 21
+rect -282 -13 -223 19
+rect -282 -22 -279 -13
+rect -271 -16 -235 -13
+rect -271 -20 -260 -16
+rect -251 -17 -235 -16
+rect -246 -19 -235 -17
+rect -245 -20 -235 -19
+rect -271 -21 -263 -20
+rect -261 -21 -253 -20
+rect -244 -21 -235 -20
+rect -271 -22 -250 -21
+rect -242 -22 -235 -21
+rect -227 -22 -223 -13
 << ntransistor >>
-rect -258 51 -256 69
-rect -250 51 -248 69
-rect -87 27 -69 29
-rect -21 27 -3 29
+rect -271 43 -269 52
+rect -263 43 -261 52
+rect -245 43 -243 52
+rect -237 43 -235 52
 << ndiffusion >>
-rect -264 68 -258 69
-rect -264 52 -263 68
-rect -259 52 -258 68
-rect -264 51 -258 52
-rect -256 68 -250 69
-rect -256 52 -255 68
-rect -251 52 -250 68
-rect -256 51 -250 52
-rect -248 68 -242 69
-rect -248 52 -247 68
-rect -243 52 -242 68
-rect -248 51 -242 52
-rect -87 34 -69 35
-rect -87 30 -86 34
-rect -70 30 -69 34
-rect -87 29 -69 30
-rect -21 34 -3 35
-rect -21 30 -20 34
-rect -4 30 -3 34
-rect -21 29 -3 30
-rect -87 26 -69 27
-rect -87 22 -86 26
-rect -70 22 -69 26
-rect -87 21 -69 22
-rect -21 26 -3 27
-rect -21 22 -20 26
-rect -4 22 -3 26
-rect -21 21 -3 22
+rect -277 51 -271 52
+rect -277 44 -276 51
+rect -272 44 -271 51
+rect -277 43 -271 44
+rect -269 51 -263 52
+rect -269 44 -268 51
+rect -264 44 -263 51
+rect -269 43 -263 44
+rect -261 51 -255 52
+rect -261 44 -260 51
+rect -256 44 -255 51
+rect -261 43 -255 44
+rect -251 51 -245 52
+rect -251 44 -250 51
+rect -246 44 -245 51
+rect -251 43 -245 44
+rect -243 51 -237 52
+rect -243 44 -242 51
+rect -238 44 -237 51
+rect -243 43 -237 44
+rect -235 51 -229 52
+rect -235 44 -234 51
+rect -230 44 -229 51
+rect -235 43 -229 44
 << ndcontact >>
-rect -263 52 -259 68
-rect -255 52 -251 68
-rect -247 52 -243 68
-rect -86 30 -70 34
-rect -20 30 -4 34
-rect -86 22 -70 26
-rect -20 22 -4 26
+rect -276 44 -272 51
+rect -268 44 -264 51
+rect -260 44 -256 51
+rect -250 44 -246 51
+rect -242 44 -238 51
+rect -234 44 -230 51
+<< psubstratepcontact >>
+rect -276 35 -272 39
+rect -268 35 -264 39
+rect -259 35 -255 39
+rect -251 35 -247 39
+rect -242 35 -238 39
+rect -234 35 -230 39
+rect -268 -50 -264 -46
+rect -242 -50 -238 -46
+<< nsubstratencontact >>
+rect -276 -3 -272 1
+rect -268 -3 -264 1
+rect -259 -3 -255 1
+rect -251 -3 -247 1
+rect -242 -3 -238 1
+rect -234 -3 -230 1
 << polysilicon >>
-rect -258 69 -256 71
-rect -250 69 -248 71
-rect -258 49 -256 51
-rect -250 49 -248 51
-rect -90 27 -87 29
-rect -69 27 -67 29
-rect -23 27 -21 29
-rect -3 27 0 29
+rect -271 54 -268 56
+rect -264 54 -261 56
+rect -271 52 -269 54
+rect -263 52 -261 54
+rect -245 54 -242 56
+rect -238 54 -235 56
+rect -245 52 -243 54
+rect -237 52 -235 54
+rect -271 41 -269 43
+rect -263 41 -261 43
+rect -245 41 -243 43
+rect -237 41 -235 43
 << polycontact >>
-rect -259 45 -255 49
-rect -251 45 -247 49
-rect -94 26 -90 30
-rect 0 26 4 30
+rect -268 54 -264 58
+rect -242 54 -238 58
 << metal1 >>
-rect -263 68 -259 71
-rect -247 68 -243 71
-rect -259 31 -255 45
-rect -266 27 -255 31
-rect -251 31 -247 45
-rect -251 27 -240 31
-rect -94 1 -90 26
-rect 0 1 4 26
-rect -94 -3 -83 1
-rect -7 -3 4 1
-use inv  inv_3
-timestamp 1633809539
-transform -1 0 -237 0 -1 25
-box -13 -22 13 23
-use inv  inv_1
-timestamp 1633809539
-transform -1 0 -80 0 -1 -5
-box -13 -22 13 23
-use nand  nand_1
-timestamp 1633816195
-transform -1 0 -59 0 -1 -8
-box -17 -34 17 20
-use nand  nand_0
-timestamp 1633816195
-transform 1 0 -31 0 -1 -8
-box -17 -34 17 20
-use inv  inv_0
-timestamp 1633809539
-transform 1 0 -10 0 -1 -5
-box -13 -22 13 23
-use sa  sa_0 ~/lab/magic/sram/sa
-timestamp 1633804522
-transform 1 0 -166 0 1 210
-box -25 -131 33 -62
-use inv  inv_2
-timestamp 1633809539
-transform 1 0 -269 0 -1 25
-box -13 -22 13 23
+rect -279 61 -256 64
+rect -276 51 -273 61
+rect -259 51 -256 61
+rect -250 61 -227 64
+rect -250 51 -247 61
+rect -233 51 -230 61
+rect -268 39 -264 44
+rect -242 39 -238 44
+rect -277 35 -276 39
+rect -272 35 -268 39
+rect -264 35 -259 39
+rect -255 35 -251 39
+rect -247 35 -242 39
+rect -238 35 -234 39
+rect -230 35 -229 39
+rect -277 -3 -276 1
+rect -272 -3 -268 1
+rect -264 -3 -259 1
+rect -255 -3 -251 1
+rect -247 -3 -242 1
+rect -238 -3 -234 1
+rect -230 -3 -229 1
+rect -270 -34 -240 -31
+rect -277 -50 -268 -46
+rect -264 -50 -242 -46
+rect -238 -50 -229 -46
+<< m2contact >>
+rect -268 54 -264 58
+rect -242 54 -238 58
+rect -274 19 -270 23
+rect -267 19 -263 23
+rect -257 19 -253 23
+rect -250 19 -246 23
+rect -243 19 -239 23
+rect -236 19 -232 23
+rect -276 -25 -272 -21
+rect -263 -28 -259 -24
+rect -247 -28 -243 -24
+rect -234 -25 -230 -21
+rect -240 -34 -236 -30
+<< metal2 >>
+rect -267 23 -264 54
+rect -242 23 -239 54
+rect -275 19 -274 23
+rect -232 19 -231 23
+rect -275 -21 -272 19
+rect -257 0 -254 19
+rect -269 -3 -254 0
+rect -269 -31 -266 -3
+rect -249 -6 -246 19
+rect -263 -9 -246 -6
+rect -263 -24 -260 -9
+rect -234 -21 -231 19
+rect -255 -27 -247 -24
+rect -255 -31 -252 -27
+rect -283 -34 -252 -31
+rect -249 -34 -240 -31
+rect -249 -37 -246 -34
+rect -283 -40 -246 -37
 use nand  nand_2
 timestamp 1633816195
-transform -1 0 -265 0 1 -16
+transform -1 0 -266 0 1 -16
 box -17 -34 17 20
+use inv  inv_2
+timestamp 1633895608
+transform 1 0 -270 0 -1 17
+box -13 -22 13 23
 use nand  nand_3
 timestamp 1633816195
 transform 1 0 -240 0 1 -16
 box -17 -34 17 20
+use inv  inv_4
+timestamp 1633895608
+transform 1 0 -253 0 -1 17
+box -13 -22 13 23
+use inv  inv_3
+timestamp 1633895608
+transform -1 0 -236 0 -1 17
+box -13 -22 13 23
+<< labels >>
+rlabel metal1 -253 -48 -253 -48 1 gnd
+rlabel metal2 -281 -33 -281 -33 1 din
+rlabel metal2 -281 -39 -281 -39 1 w_en
+rlabel metal1 -277 62 -277 62 1 bl
+rlabel metal1 -229 62 -229 62 1 blb
+rlabel metal1 -253 36 -253 36 1 gnd
+rlabel metal1 -253 -2 -253 -2 1 vdd
 << end >>

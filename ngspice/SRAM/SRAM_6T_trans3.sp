@@ -4,22 +4,24 @@
 .global vdd gnd
 
 *pre-layout 6T-Cell
-.include '/home/swadesh/lab/ngspice/SRAM/SRAM_6T2.sp'
+*.include '/home/swadesh/lab/ngspice/SRAM/SRAM_6T2.sp'
 *post-layout 6T-Cell
-*.include '/home/swadesh/lab/magic/sram/6T-cell/6T-cell.spice'
+.include '/home/swadesh/lab/magic/sram/6T-cell/6T-cell.spice'
 
 *pre-layout sa
 *.include '/home/swadesh/lab/ngspice/SRAM/sense_amp.sp'
 *post-layout sa
 .include '/home/swadesh/lab/magic/sram/sa/sa.spice'
+
 *pre-layout pc
 *.include '/home/swadesh/lab/ngspice/SRAM/pre_charge.sp'
 *post-layout pc
 .include '/home/swadesh/lab/magic/sram/pc/pc.spice'
 
 *pre-layout wd
-.include '/home/swadesh/lab/ngspice/SRAM/write_driver.sp'
+*.include '/home/swadesh/lab/ngspice/SRAM/write_driver.sp'
 *post-layout wd
+.include '/home/swadesh/lab/magic/sram/wd/wd.spice'
 
 .tran 10p 160n
 

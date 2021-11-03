@@ -1,0 +1,91 @@
+* SPICE3 file created from /home/swadesh/lab/magic/sram/wd/wd.ext - technology: scmos
+
+.subckt nand a_0_n18# a_n7_n12# w_n17_n6# a_n11_0# a_n11_n26# a_n3_n26#
+M1000 a_n11_0# a_0_n18# a_n3_n26# a_n11_n26# scmosn w=1.2u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1001 a_n11_0# a_0_n18# w_n17_n6# w_n17_n6# scmosp w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1002 w_n17_n6# a_n7_n12# a_n11_0# w_n17_n6# scmosp w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1003 a_n3_n26# a_n7_n12# a_n11_n26# a_n11_n26# scmosn w=1.2u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+C0 a_n11_0# a_n3_n26# 0.04fF
+C1 w_n17_n6# a_n11_0# 0.46fF
+C2 a_0_n18# a_n3_n26# 0.05fF
+C3 a_0_n18# a_n11_0# 0.09fF
+C4 a_n7_n12# a_n11_0# 0.13fF
+C5 w_n17_n6# a_0_n18# 0.17fF
+C6 w_n17_n6# a_n7_n12# 0.17fF
+C7 a_n7_n12# a_0_n18# 0.23fF
+C8 a_n3_n26# a_n11_n26# 0.06fF
+C9 a_n11_0# a_n11_n26# 0.17fF
+C10 a_0_n18# a_n11_n26# 0.54fF
+C11 a_n7_n12# a_n11_n26# 0.42fF
+C12 w_n17_n6# a_n11_n26# 2.09fF
+.ends
+
+.subckt inv in a_n7_n14# out w_n13_n4#
+M1000 out in a_n7_n14# a_n7_n14# scmosn w=0.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1001 out in w_n13_n4# w_n13_n4# scmosp w=2u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+C0 w_n13_n4# out 0.16fF
+C1 in out 0.05fF
+C2 w_n13_n4# in 0.27fF
+C3 out a_n7_n14# 0.13fF
+C4 in a_n7_n14# 0.27fF
+C5 w_n13_n4# a_n7_n14# 1.66fF
+.ends
+
+
+* Top level circuit /home/swadesh/lab/magic/sram/wd/wd
+.subckt write_driver_swad w_en din blb bl
+Xnand_3 w_en din vdd inv_3/in gnd nand_3/a_n3_n26# nand
+Xinv_2 inv_2/in gnd inv_2/out vdd inv
+Xinv_3 inv_3/in gnd inv_3/out vdd inv
+Xinv_4 din gnd inv_4/out vdd inv
+Xnand_2 w_en inv_4/out vdd inv_2/in gnd nand_2/a_n3_n26# nand
+M1000 bl inv_2/out gnd gnd scmosn w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1001 gnd inv_2/out bl gnd scmosn w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1002 blb inv_3/out gnd gnd scmosn w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1003 gnd inv_3/out blb gnd scmosn w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+C0 inv_3/in inv_2/in 0.09fF
+C1 inv_3/in inv_4/out 0.04fF
+C2 inv_3/in vdd 0.18fF
+C3 inv_3/out blb 0.12fF
+C4 din inv_2/out 0.09fF
+C5 din inv_2/in 0.52fF
+C6 din w_en 0.81fF
+C7 din inv_4/out 0.91fF
+C8 inv_3/out inv_4/out 0.29fF
+C9 din vdd 0.42fF
+C10 inv_3/out vdd 0.01fF
+C11 inv_3/out inv_3/in 0.06fF
+C12 bl blb 0.14fF
+C13 inv_2/out bl 0.12fF
+C14 inv_2/out inv_2/in 0.06fF
+C15 inv_2/out vdd 0.08fF
+C16 w_en nand_2/a_n3_n26# 0.06fF
+C17 w_en inv_2/in 0.06fF
+C18 inv_4/out inv_2/in 0.12fF
+C19 inv_4/out w_en 0.01fF
+C20 vdd inv_2/in 0.18fF
+C21 vdd inv_4/out 0.15fF
+C22 blb gnd -0.26fF
+C23 bl gnd -0.26fF
+C24 nand_2/a_n3_n26# gnd 0.06fF
+C25 inv_2/in gnd 0.57fF
+C26 w_en gnd 1.71fF
+C27 inv_4/out gnd 0.67fF
+C28 vdd gnd 14.60fF
+C29 inv_3/out gnd -0.33fF
+C30 inv_2/out gnd -0.29fF
+C31 nand_3/a_n3_n26# gnd 0.06fF
+C32 inv_3/in gnd 0.57fF
+C33 din gnd 0.94fF
+.ends write_driver_swad
+
