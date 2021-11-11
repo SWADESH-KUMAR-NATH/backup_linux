@@ -1,15 +1,16 @@
-timestamp 1633895608
+timestamp 1636288754
 version 8.3
 tech scmos
 style TSMC0.35um(tsmc35)from:t11c
 scale 1000 1 20
 resistclasses 3700 2800 1018000 1018000 1 6000 6000 80 70 80 40
-node "out" 11 129.687 1 -14 ndif 24 20 60 32 0 0 0 0 0 0 0 0 0 0 87 60 0 0 0 0 0 0
-node "in" 90 274.22 -4 -6 pc 0 0 0 0 0 0 0 0 0 0 72 70 0 0 28 22 0 0 0 0 0 0
-node "w_n13_n4#" 1084 1656.72 -13 -4 nw 32 32 60 32 702 106 0 0 0 0 0 0 0 0 108 62 0 0 0 0 0 0
-substrate "a_n7_n14#" 0 0 -7 -14 ndif 24 20 32 32 0 0 0 0 0 0 0 0 0 0 88 52 0 0 0 0 0 0
-cap "w_n13_n4#" "out" 155.671
-cap "w_n13_n4#" "in" 265.972
+node "out" 11 181.703 1 -17 ndif 24 20 60 32 0 0 0 0 0 0 0 0 0 0 108 70 0 0 0 0 0 0
+node "in" 99 307.145 -3 -9 pc 0 0 0 0 0 0 0 0 0 0 74 74 0 0 16 16 0 0 0 0 0 0
+node "vdd" 1084 1656.72 -13 -4 nw 32 32 60 32 702 106 0 0 0 0 0 0 0 0 108 62 0 0 0 0 0 0
+substrate "gnd" 0 0 -7 -17 ndif 24 20 32 32 0 0 0 0 0 0 0 0 0 0 88 52 0 0 0 0 0 0
+cap "vdd" "in" 166.868
 cap "in" "out" 54.984
-device mosfet nfet -1 -14 0 -13 2 4 "a_n7_n14#" "in" 4 0 "a_n7_n14#" 4 0 "out" 4 0
-device mosfet pfet -1 2 0 3 2 10 "w_n13_n4#" "in" 4 0 "w_n13_n4#" 10 0 "out" 10 0
+cap "vdd" "out" 183.953
+device mosfet nfet -1 -17 0 -16 2 4 "gnd" "in" 4 0 "gnd" 4 0 "out" 4 0
+device mosfet pfet -1 2 0 3 2 10 "vdd" "in" 4 0 "vdd" 10 0 "out" 10 0
+subcap "out" -73.2165

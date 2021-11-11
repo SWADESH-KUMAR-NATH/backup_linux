@@ -6,17 +6,17 @@
 *pre-layout 6T-Cell
 *.include '/home/swadesh/lab/ngspice/SRAM/SRAM_6T2.sp'
 *post-layout 6T-Cell
-.include '/home/swadesh/lab/magic/sram/6T-cell/6T-cell.spice'
+.include '/home/swadesh/lab/magic/sram/6T-cell/6T-cell1.spice'
 
 *pre-layout sa
 *.include '/home/swadesh/lab/ngspice/SRAM/sense_amp.sp'
 *post-layout sa
-.include '/home/swadesh/lab/magic/sram/sa/sa.spice'
+.include '/home/swadesh/lab/magic/sram/sa/sa2.spice'
 
 *pre-layout pc
 *.include '/home/swadesh/lab/ngspice/SRAM/pre_charge.sp'
 *post-layout pc
-.include '/home/swadesh/lab/magic/sram/pc/pc.spice'
+.include '/home/swadesh/lab/magic/sram/pc/pc1.spice'
 
 *pre-layout wd
 *.include '/home/swadesh/lab/ngspice/SRAM/write_driver.sp'

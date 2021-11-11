@@ -1,6 +1,38 @@
 magic
 tech scmos
-timestamp 1635738960
+timestamp 1636351555
+<< error_s >>
+rect -277 43 -255 46
+rect -251 43 -229 46
+rect -276 35 -272 42
+rect -268 37 -264 42
+rect -271 35 -260 37
+rect -259 35 -255 42
+rect -251 37 -247 42
+rect -242 37 -238 42
+rect -254 35 -235 37
+rect -234 35 -230 42
+rect -277 31 -263 34
+rect -260 31 -246 34
+rect -243 31 -229 34
+rect -270 23 -269 26
+rect -253 23 -252 26
+rect -267 22 -266 23
+rect -250 22 -249 23
+rect -237 22 -236 26
+rect -273 -24 -272 -21
+rect -270 -25 -269 -24
+rect -234 -25 -233 -21
+rect -240 -28 -236 -27
+rect -237 -31 -236 -30
+rect -270 -34 -269 -31
+rect -234 -34 -233 -31
+rect -268 -43 -264 -42
+rect -242 -43 -238 -42
+rect -277 -44 -255 -43
+rect -251 -44 -229 -43
+rect -268 -48 -264 -46
+rect -242 -48 -238 -46
 << nwell >>
 rect -282 19 -261 21
 rect -257 19 -223 21
@@ -147,25 +179,25 @@ rect -249 -34 -240 -31
 rect -249 -37 -246 -34
 rect -283 -40 -246 -37
 use nand  nand_2
-timestamp 1633816195
+timestamp 1636351123
 transform -1 0 -266 0 1 -16
-box -17 -34 17 20
-use inv  inv_2
-timestamp 1633895608
-transform 1 0 -270 0 -1 17
-box -13 -22 13 23
+box -17 -28 17 20
 use nand  nand_3
-timestamp 1633816195
+timestamp 1636351123
 transform 1 0 -240 0 1 -16
-box -17 -34 17 20
-use inv  inv_4
-timestamp 1633895608
-transform 1 0 -253 0 -1 17
-box -13 -22 13 23
+box -17 -28 17 20
 use inv  inv_3
-timestamp 1633895608
+timestamp 1636288754
 transform -1 0 -236 0 -1 17
-box -13 -22 13 23
+box -13 -25 13 23
+use inv  inv_4
+timestamp 1636288754
+transform 1 0 -253 0 -1 17
+box -13 -25 13 23
+use inv  inv_2
+timestamp 1636288754
+transform 1 0 -270 0 -1 17
+box -13 -25 13 23
 << labels >>
 rlabel metal1 -253 -48 -253 -48 1 gnd
 rlabel metal2 -281 -33 -281 -33 1 din

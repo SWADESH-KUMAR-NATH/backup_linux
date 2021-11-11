@@ -1,0 +1,39 @@
+timestamp 1636142975
+version 8.3
+tech scmos
+style TSMC0.35um(tsmc35)from:t11c
+scale 1000 1 20
+resistclasses 3700 2800 1018000 1018000 1 6000 6000 80 70 80 40
+node "a_13_n47#" 24 646.157 13 -47 ndif 99 58 0 0 0 0 0 0 0 0 0 0 0 0 140 86 0 0 0 0 0 0
+node "blb" 16 223.513 37 -24 pdif 0 0 120 58 0 0 0 0 0 0 0 0 0 0 88 52 217 150 0 0 0 0
+node "sab" 170 528.028 11 -49 p 45 28 138 60 0 0 0 0 0 0 112 110 0 0 225 140 0 0 0 0 0 0
+node "sa" 170 400.338 6 -47 ndif 45 28 138 60 0 0 0 0 0 0 112 110 0 0 225 140 0 0 0 0 0 0
+node "bl" 16 106.753 6 -24 pdif 0 0 120 58 0 0 0 0 0 0 0 0 0 0 88 52 217 150 0 0 0 0
+node "r_en" 358 1544.81 11 -26 p 0 0 0 0 0 0 0 0 0 0 246 246 0 0 160 88 0 0 0 0 0 0
+node "vdd" 1223 4644.48 0 -30 nw 32 32 108 48 1968 178 0 0 0 0 0 0 0 0 268 142 0 0 0 0 0 0
+substrate "gnd" 0 0 37 -47 ndif 45 28 16 16 0 0 0 0 0 0 0 0 0 0 184 118 0 0 0 0 0 0
+cap "r_en" "sab" 24.1728
+cap "r_en" "sa" 40.7268
+cap "bl" "sa" 435.177
+cap "r_en" "vdd" 712.828
+cap "bl" "vdd" 162.08
+cap "r_en" "blb" 48.88
+cap "sab" "a_13_n47#" 309.285
+cap "sa" "a_13_n47#" 81.1665
+cap "sab" "sa" 523.228
+cap "sab" "vdd" 521.482
+cap "vdd" "sa" 705.234
+cap "r_en" "bl" 48.88
+cap "sab" "blb" 226.809
+cap "vdd" "blb" 171.56
+device mosfet nfet 35 -47 36 -46 2 9 "gnd" "r_en" 4 0 "a_13_n47#" 9 0 "gnd" 9 0
+device mosfet nfet 19 -47 20 -46 2 9 "gnd" "sa" 4 0 "a_13_n47#" 9 0 "sab" 9 0
+device mosfet nfet 11 -47 12 -46 2 9 "gnd" "sab" 4 0 "sa" 9 0 "a_13_n47#" 9 0
+device mosfet pfet 35 -24 36 -23 2 24 "vdd" "r_en" 4 0 "sab" 24 0 "blb" 24 0
+device mosfet pfet 27 -24 28 -23 2 18 "vdd" "sa" 4 0 "vdd" 18 0 "sab" 18 0
+device mosfet pfet 19 -24 20 -23 2 18 "vdd" "sab" 4 0 "sa" 18 0 "vdd" 18 0
+device mosfet pfet 11 -24 12 -23 2 24 "vdd" "r_en" 4 0 "bl" 24 0 "sa" 24 0
+subcap "a_13_n47#" -403.789
+subcap "blb" -96.183
+subcap "r_en" -809.102
+subcap "gnd" -61.138

@@ -1,0 +1,5 @@
+blb -234 -42 pdif
+bl -242 -42 pdif
+pc -244 -44 p
+vdd -255 -56 nw
+gnd -245 -15 poc

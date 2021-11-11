@@ -1,0 +1,34 @@
+* SPICE3 file created from 6T-cell1.ext - technology: scmos
+
+
+* Top level circuit 6T-cell1
+.subckt SRAM_6T_swad q2 q1 blb bl wl
+M1000 q2 q1 vdd vdd scmosp w=0.6u l=1.2u
++  ad=0p pd=0u as=0p ps=0u
+M1001 vdd q2 q1 vdd scmosp w=0.6u l=1.2u
++  ad=0p pd=0u as=0p ps=0u
+M1002 q1 wl bl gnd scmosn w=0.6u l=0.8u
++  ad=0p pd=0u as=0p ps=0u
+M1003 q2 q1 gnd gnd scmosn w=1.2u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1004 gnd q2 q1 gnd scmosn w=1.2u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1005 q2 wl blb gnd scmosn w=0.6u l=0.8u
++  ad=0p pd=0u as=0p ps=0u
+C0 wl q1 0.03fF
+C1 wl bl 0.12fF
+C2 vdd q1 0.46fF
+C3 q2 q1 0.39fF
+C4 blb wl 0.12fF
+C5 vdd bl 0.11fF
+C6 blb vdd 0.11fF
+C7 q2 wl 0.03fF
+C8 q2 vdd 0.64fF
+C9 blb gnd 0.19fF
+C10 bl gnd 0.19fF
+C11 wl gnd 0.91fF
+C12 q1 gnd 0.42fF
+C13 q2 gnd 0.29fF
+C14 vdd gnd 2.00fF
+.ends SRAM_6T_swad
+

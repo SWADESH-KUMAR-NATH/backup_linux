@@ -1,0 +1,98 @@
+timestamp 1636360276
+version 8.3
+tech scmos
+style TSMC0.35um(tsmc35)from:t11c
+scale 1000 1 20
+resistclasses 3700 2800 1018000 1018000 1 6000 6000 80 70 80 40
+use inv1 inv1_0 1 0 -78 0 1 -212
+use inv inv_1 1 0 -110 0 -1 -171
+use nand nand_2 1 0 -131 0 -1 -174
+use inv inv_2 -1 0 -135 0 1 -125
+use nand nand_1 -1 0 -114 0 1 -122
+node "m1_n123_n166#" 0 173.432 -123 -166 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56 36 0 0 0 0 0 0
+node "din" 1 316.436 -131 -198 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 32 204 110 0 0 0 0
+node "m1_n142_n150#" 1 451.332 -142 -150 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 156 86 0 0 0 0 0 0
+node "m1_n124_n205#" 2 441.984 -124 -205 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 32 356 186 0 0 0 0
+node "w_en" 2 504.716 -139 -166 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 32 416 216 0 0 0 0
+equiv "w_en" "gnd"
+node "m1_n136_n134#" 0 173.432 -136 -134 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56 36 0 0 0 0 0 0
+node "m1_n142_n109#" 1 451.332 -142 -109 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 156 86 0 0 0 0 0 0
+node "blb" 12 401.593 -118 -96 ndif 108 48 0 0 0 0 0 0 0 0 0 0 0 0 92 54 53 40 0 0 0 0
+node "bl" 12 401.593 -134 -96 ndif 108 48 0 0 0 0 0 0 0 0 0 0 0 0 92 54 53 40 0 0 0 0
+node "a_n121_n102#" 80 568.406 -121 -102 pc 0 0 0 0 0 0 0 0 0 0 60 60 0 0 32 32 254 174 0 0 0 0
+node "a_n129_n102#" 79 412.407 -129 -102 pc 0 0 0 0 0 0 0 0 0 0 60 60 0 0 32 32 107 76 0 0 0 0
+substrate "gnd" 0 0 -126 -96 ndif 108 48 16 16 0 0 0 0 0 0 0 0 0 0 244 130 0 0 0 0 0 0
+cap "din" "m1_n123_n166#" 41.238
+cap "m1_n124_n205#" "a_n121_n102#" 313.76
+cap "w_en" "a_n121_n102#" 82.9223
+cap "w_en" "m1_n136_n134#" 85.014
+cap "m1_n142_n109#" "a_n121_n102#" 111.16
+cap "a_n129_n102#" "a_n121_n102#" 314.328
+cap "w_en" "m1_n124_n205#" 574.63
+cap "din" "m1_n124_n205#" 674.584
+cap "w_en" "din" 704.056
+cap "m1_n142_n109#" "a_n129_n102#" 144.15
+cap "m1_n142_n150#" "a_n121_n102#" 94.902
+cap "m1_n124_n205#" "m1_n142_n150#" 68.416
+cap "w_en" "m1_n142_n150#" 68.416
+cap "m1_n123_n166#" "m1_n124_n205#" 56.176
+device mosfet nfet -120 -96 -119 -95 2 18 "gnd" "a_n121_n102#" 4 0 "gnd" 18 0 "blb" 18 0
+device mosfet nfet -128 -96 -127 -95 2 18 "gnd" "a_n129_n102#" 4 0 "bl" 18 0 "gnd" 18 0
+cap "inv1_0/in" "inv_1/in" 14.938
+cap "inv1_0/out" "inv_1/in" 234.124
+cap "nand_2/a" "nand_2/a_n3_n20#" 70.104
+cap "inv_2/in" "inv_1/out" 184.64
+cap "inv1_0/gnd" "inv_1/out" -36.222
+cap "nand_2/a" "nand_1/a_n3_n20#" 22.832
+cap "inv1_0/vdd" "inv_1/in" 82.476
+cap "inv1_0/gnd" "inv1_0/in" 58.688
+cap "inv_2/in" "inv1_0/out" 24.728
+cap "inv1_0/gnd" "inv1_0/out" 84.74
+cap "inv1_0/out" "inv_1/out" 3.36
+cap "inv1_0/out" "inv1_0/in" 83.16
+cap "nand_2/a" "inv_1/in" 150.504
+cap "inv1_0/vdd" "inv1_0/in" 321.773
+cap "inv1_0/vdd" "inv1_0/out" 129.418
+cap "inv_2/vdd" "inv_2/out" 60.2398
+cap "inv_2/in" "nand_2/a" 17.478
+cap "inv1_0/gnd" "nand_2/a" 237.176
+cap "inv_2/vdd" "inv_2/in" 82.476
+cap "nand_2/a" "inv_1/out" 27.413
+cap "inv_2/vdd" "inv_1/out" 42.042
+cap "inv1_0/out" "nand_1/a_n3_n20#" 25.448
+cap "nand_2/a" "inv1_0/in" 9.407
+cap "inv1_0/gnd" "inv_1/in" 61.857
+cap "nand_2/a" "inv1_0/out" -25.996
+cap "inv_2/in" "inv_2/out" 32.19
+cap "inv1_0/vdd" "nand_2/a" 99.038
+cap "inv1_0/gnd" "inv_2/in" 61.857
+subcap "blb" -288.06
+subcap "bl" -288.06
+subcap "a_n121_n102#" -329.082
+subcap "a_n129_n102#" -231.001
+subcap "gnd" -128.856
+cap "a_n121_n102#" "nand_1/b" 5.366
+cap "inv_2/vdd" "a_n121_n102#" 49.299
+cap "inv_2/vdd" "inv_2/out" 35.6378
+merge "nand_2/b" "inv1_0/in" -405.011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -32 0 0 0 0 0 0
+merge "inv1_0/in" "din"
+merge "nand_1/y" "inv_2/in" -113.428 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28 -30 0 0 0 0 0 0
+merge "inv_2/in" "m1_n136_n134#"
+merge "nand_1/a" "inv1_0/out" -348.433 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -32 0 0 0 0 0 0
+merge "inv1_0/out" "m1_n124_n205#"
+merge "nand_1/gnd" "inv_2/gnd" -1160.77 -108 -48 -40 -44 0 0 0 0 0 0 0 0 0 0 -452 -302 0 0 0 0 0 0
+merge "inv_2/gnd" "nand_2/gnd"
+merge "nand_2/gnd" "inv_1/gnd"
+merge "inv_1/gnd" "m1_n142_n150#"
+merge "m1_n142_n150#" "inv1_0/gnd"
+merge "inv1_0/gnd" "gnd"
+merge "nand_2/y" "inv_1/in" -113.428 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28 -30 0 0 0 0 0 0
+merge "inv_1/in" "m1_n123_n166#"
+merge "inv_2/out" "a_n129_n102#" -199.739 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -16 0 0 0 0 0 0
+merge "nand_2/vdd" "inv_1/vdd" -1407.19 -32 -32 0 0 -503 -144 0 0 0 0 0 0 0 0 -144 -88 0 0 0 0 0 0
+merge "inv_1/vdd" "inv1_0/vdd"
+merge "nand_1/b" "nand_2/a" -407.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -32 0 0 0 0 0 0
+merge "nand_2/a" "w_en"
+merge "nand_1/vdd" "inv_2/vdd" -784.908 0 0 0 0 -243 -72 0 0 0 0 0 0 0 0 0 -88 0 0 0 0 0 0
+merge "inv_2/vdd" "m1_n142_n109#"
+merge "inv_1/out" "a_n121_n102#" -247.377 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0 0 0

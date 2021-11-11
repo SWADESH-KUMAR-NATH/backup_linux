@@ -1,0 +1,7 @@
+blb -163 0 ndc
+bl -179 0 ndc
+wl -183 4 p
+q1 -183 33 pdc
+q2 -178 32 p
+vdd -189 27 nw
+gnd -172 13 ndif

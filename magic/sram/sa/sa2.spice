@@ -1,0 +1,42 @@
+* SPICE3 file created from sa2.ext - technology: scmos
+
+
+* Top level circuit sa2
+.subckt sense_amp_swad blb bl sa sab r_en
+M1000 gnd r_en a_13_n47# gnd scmosn w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1001 sab sa vdd vdd scmosp w=3.6u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1002 sab sa a_13_n47# gnd scmosn w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1003 sa r_en bl vdd scmosp w=4.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1004 blb r_en sab vdd scmosp w=4.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1005 a_13_n47# sab sa gnd scmosn w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1006 vdd sab sa vdd scmosp w=3.6u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+C0 sa sab 0.52fF
+C1 sa bl 0.44fF
+C2 sab a_13_n47# 0.31fF
+C3 sa vdd 0.71fF
+C4 sa r_en 0.04fF
+C5 sab vdd 0.52fF
+C6 vdd bl 0.16fF
+C7 sab blb 0.23fF
+C8 sa a_13_n47# 0.08fF
+C9 sab r_en 0.02fF
+C10 vdd blb 0.17fF
+C11 bl r_en 0.05fF
+C12 vdd r_en 0.71fF
+C13 blb r_en 0.05fF
+C14 a_13_n47# gnd 0.24fF
+C15 blb gnd 0.13fF
+C16 sab gnd 0.53fF
+C17 sa gnd 0.40fF
+C18 bl gnd 0.11fF
+C19 r_en gnd 0.74fF
+C20 vdd gnd 4.64fF
+.ends sense_amp_swad
+

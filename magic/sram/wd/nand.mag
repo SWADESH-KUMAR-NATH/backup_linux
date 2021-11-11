@@ -1,27 +1,27 @@
 magic
 tech scmos
-timestamp 1633816195
+timestamp 1636351123
 << nwell >>
-rect -17 -6 17 20
+rect -17 -7 17 20
 << ntransistor >>
-rect -5 -26 -3 -20
-rect 3 -26 5 -20
+rect -5 -20 -3 -14
+rect 3 -20 5 -14
 << ptransistor >>
 rect -5 0 -3 9
 rect 3 0 5 9
 << ndiffusion >>
-rect -11 -21 -5 -20
-rect -11 -25 -10 -21
-rect -6 -25 -5 -21
-rect -11 -26 -5 -25
-rect -3 -21 3 -20
-rect -3 -25 -2 -21
-rect 2 -25 3 -21
-rect -3 -26 3 -25
-rect 5 -21 11 -20
-rect 5 -25 6 -21
-rect 10 -25 11 -21
-rect 5 -26 11 -25
+rect -11 -15 -5 -14
+rect -11 -19 -10 -15
+rect -6 -19 -5 -15
+rect -11 -20 -5 -19
+rect -3 -15 3 -14
+rect -3 -19 -2 -15
+rect 2 -19 3 -15
+rect -3 -20 3 -19
+rect 5 -15 11 -14
+rect 5 -19 6 -15
+rect 10 -19 11 -15
+rect 5 -20 11 -19
 << pdiffusion >>
 rect -11 8 -5 9
 rect -11 1 -10 8
@@ -36,41 +36,48 @@ rect 5 1 6 8
 rect 10 1 11 8
 rect 5 0 11 1
 << ndcontact >>
-rect -10 -25 -6 -21
-rect -2 -25 2 -21
-rect 6 -25 10 -21
+rect -10 -19 -6 -15
+rect -2 -19 2 -15
+rect 6 -19 10 -15
 << pdcontact >>
 rect -10 1 -6 8
 rect -2 1 2 8
 rect 6 1 10 8
 << psubstratepcontact >>
-rect -2 -34 2 -30
+rect -2 -28 2 -24
 << nsubstratencontact >>
 rect -2 13 2 17
 << polysilicon >>
 rect -5 9 -3 11
 rect 3 9 5 11
 rect -5 -8 -3 0
-rect -5 -20 -3 -12
-rect 3 -14 5 0
-rect 4 -18 5 -14
-rect 3 -20 5 -18
-rect -5 -28 -3 -26
-rect 3 -28 5 -26
+rect 3 -8 5 0
+rect -4 -12 -3 -8
+rect 4 -12 5 -8
+rect -5 -14 -3 -12
+rect 3 -14 5 -12
+rect -5 -22 -3 -20
+rect 3 -22 5 -20
 << polycontact >>
-rect -7 -12 -3 -8
-rect 0 -18 4 -14
+rect -8 -12 -4 -8
+rect 0 -12 4 -8
 << metal1 >>
 rect -11 13 -2 17
 rect 2 13 11 17
 rect -2 8 2 13
+rect 10 1 11 8
 rect -10 -2 -7 1
-rect 7 -2 10 1
-rect -10 -5 10 -2
-rect -11 -11 -7 -8
-rect -11 -18 0 -15
-rect 7 -21 10 -5
-rect -10 -30 -6 -25
-rect -11 -34 -2 -30
-rect 2 -34 11 -30
+rect 8 -2 11 1
+rect -10 -5 11 -2
+rect 8 -15 11 -5
+rect 10 -19 11 -15
+rect -10 -24 -6 -19
+rect -11 -28 -2 -24
+rect 2 -28 11 -24
+<< labels >>
+rlabel metal1 -8 -26 -8 -26 1 gnd
+rlabel metal1 10 -5 10 -5 1 y
+rlabel metal1 -8 15 -8 15 5 vdd
+rlabel polycontact -6 -10 -6 -10 1 a
+rlabel polycontact 2 -10 2 -10 1 b
 << end >>

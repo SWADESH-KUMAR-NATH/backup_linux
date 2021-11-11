@@ -1,0 +1,92 @@
+* SPICE3 file created from /home/swadesh/lab/magic/sram/wd/wd1.ext - technology: scmos
+
+.subckt inv in out gnd vdd
+M1000 out in gnd gnd nfet w=0.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1001 out in vdd vdd pfet w=2u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+C0 in out 0.05fF
+C1 vdd out 0.18fF
+C2 vdd in 0.17fF
+C3 out gnd 0.11fF
+C4 in gnd 0.31fF
+C5 vdd gnd 1.66fF
+.ends
+
+.subckt nand a_n3_n20# y gnd a b vdd
+M1000 y b vdd vdd pfet w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1001 vdd a y vdd pfet w=1.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1002 a_n3_n20# a gnd gnd nfet w=1.2u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1003 y b a_n3_n20# gnd nfet w=1.2u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+C0 b a_n3_n20# 0.03fF
+C1 y a_n3_n20# 0.04fF
+C2 a b 0.12fF
+C3 b y 0.13fF
+C4 a y 0.09fF
+C5 vdd b 0.18fF
+C6 vdd a 0.18fF
+C7 vdd y 0.50fF
+C8 y gnd 0.12fF
+C9 b gnd 0.28fF
+C10 a gnd 0.28fF
+C11 vdd gnd 2.17fF
+.ends
+
+.subckt inv1 in out gnd vdd
+M1000 out in gnd gnd nfet w=0.8u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1001 vdd in out vdd pfet w=2u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+C0 in out 0.05fF
+C1 vdd out 0.16fF
+C2 vdd in 0.38fF
+C3 out gnd 0.09fF
+C4 in gnd 0.51fF
+C5 vdd gnd 2.23fF
+.ends
+
+
+* Top level circuit /home/swadesh/lab/magic/sram/wd/wd1
+
+Xinv_1 nand_2/y inv_1/out gnd inv_1/vdd inv
+Xinv_2 nand_1/y inv_2/out gnd inv_2/vdd inv
+Xnand_1 nand_1/a_n3_n20# nand_1/y gnd nand_1/a gnd inv_2/vdd nand
+Xinv1_0 din nand_1/a gnd inv_1/vdd inv1
+Xnand_2 nand_2/a_n3_n20# nand_2/y gnd gnd din inv_1/vdd nand
+M1000 gnd inv_2/out bl gnd nfet w=3.6u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1001 blb inv_1/out gnd gnd nfet w=3.6u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+C0 inv_1/out nand_1/a 0.32fF
+C1 inv_1/out inv_2/vdd 0.20fF
+C2 nand_2/y nand_1/a 0.29fF
+C3 inv_2/vdd inv_2/out 0.24fF
+C4 nand_2/y din 0.06fF
+C5 nand_1/y nand_1/a 0.02fF
+C6 inv_2/vdd nand_1/y 0.08fF
+C7 inv_1/out inv_2/out 0.31fF
+C8 nand_1/a_n3_n20# nand_1/a 0.03fF
+C9 inv_1/out nand_1/y 0.18fF
+C10 nand_1/y inv_2/out 0.03fF
+C11 inv_1/vdd nand_1/a 0.13fF
+C12 inv_1/vdd din 0.32fF
+C13 inv_1/vdd nand_2/y 0.08fF
+C14 din nand_1/a 0.76fF
+C15 blb gnd 0.11fF
+C16 bl gnd 0.11fF
+C17 nand_2/a_n3_n20# gnd 0.07fF
+C18 nand_1/a gnd 1.52fF
+C19 din gnd 1.88fF
+C20 nand_1/a_n3_n20# gnd 0.02fF
+C21 inv_2/out gnd 0.29fF
+C22 nand_1/y gnd 0.76fF
+C23 inv_2/vdd gnd 4.27fF
+C24 inv_1/out gnd 0.52fF
+C25 nand_2/y gnd 0.81fF
+C26 inv_1/vdd gnd 6.15fF
+.end
+

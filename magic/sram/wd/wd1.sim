@@ -1,0 +1,31 @@
+| units: 20 tech: scmos format: MIT
+n nand_2/y gnd inv_1/out 2 4 -110 -156
+p nand_2/y inv_1/vdd inv_1/out 2 10 -110 -174
+n nand_1/y gnd inv_2/out 2 4 -135 -141
+p nand_1/y inv_2/vdd inv_2/out 2 10 -135 -123
+p gnd inv_2/vdd nand_1/y 2 9 -118 -122
+p nand_1/a nand_1/y inv_2/vdd 2 9 -111 -122
+n nand_1/a gnd nand_1/a_n3_n20# 2 6 -111 -141
+n gnd nand_1/a_n3_n20# nand_1/y 2 6 -118 -141
+n din gnd nand_1/a 2 4 -136 -205
+p din nand_1/a inv_1/vdd 2 10 -110 -206
+p din inv_1/vdd nand_2/y 2 9 -128 -175
+p gnd nand_2/y inv_1/vdd 2 9 -135 -175
+n gnd gnd nand_2/a_n3_n20# 2 6 -135 -156
+n din nand_2/a_n3_n20# nand_2/y 2 6 -128 -156
+n inv_2/out bl gnd 2 18 -127 -95
+n inv_1/out gnd blb 2 18 -119 -95
+R blb 12
+R bl 12
+R gnd 345
+R nand_1/a 111
+C din GND 2.01
+R din 271
+R inv_2/out 90
+R nand_1/y 121
+C inv_2/vdd GND 4.46
+R inv_2/vdd 2053
+R inv_1/out 91
+R nand_2/y 121
+C inv_1/vdd GND 6.33
+R inv_1/vdd 2827

@@ -1,0 +1,21 @@
+* SPICE3 file created from pc1.ext - technology: scmos
+
+
+* Top level circuit pc1
+.subckt pre_charge_swad blb pc bl
+M1000 blb pc bl vdd scmosp w=3.6u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1001 bl pc vdd vdd scmosp w=3.6u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+M1002 vdd pc blb vdd scmosp w=3.6u l=0.4u
++  ad=0p pd=0u as=0p ps=0u
+C0 vdd blb 0.49fF
+C1 vdd bl 0.49fF
+C2 blb pc 0.06fF
+C3 bl pc 0.06fF
+C4 bl blb 0.26fF
+C5 vdd pc 1.04fF
+C6 pc gnd 0.11fF
+C7 vdd gnd 3.61fF
+.ends pre_charge_swad
+

@@ -1,0 +1,22 @@
+timestamp 1636021116
+version 8.3
+tech scmos
+style TSMC0.35um(tsmc35)from:t11c
+scale 1000 1 20
+resistclasses 3700 2800 1018000 1018000 1 6000 6000 80 70 80 40
+node "blb" 9 0 -235 -43 pdif 0 0 108 48 0 0 0 0 0 0 0 0 0 0 84 50 85 54 0 0 0 0
+node "bl" 9 0 -243 -43 pdif 0 0 108 48 0 0 0 0 0 0 0 0 0 0 84 50 85 54 0 0 0 0
+node "pc" 259 620.192 -245 -45 p 0 0 0 0 0 0 0 0 0 0 180 180 0 0 160 88 0 0 0 0 0 0
+node "vdd" 1122 3605.01 -256 -57 nw 32 32 180 92 1520 156 0 0 0 0 0 0 0 0 352 184 0 0 0 0 0 0
+substrate "gnd" 0 0 -246 -16 poc 0 0 32 32 0 0 0 0 0 0 0 0 0 0 160 88 0 0 0 0 0 0
+cap "vdd" "bl" 489.561
+cap "blb" "bl" 263.564
+cap "pc" "vdd" 1035.33
+cap "pc" "blb" 64.036
+cap "vdd" "blb" 489.56
+cap "pc" "bl" 64.036
+device mosfet pfet -229 -43 -228 -42 2 18 "vdd" "pc" 4 0 "blb" 18 0 "vdd" 18 0
+device mosfet pfet -237 -43 -236 -42 2 18 "vdd" "pc" 4 0 "bl" 18 0 "blb" 18 0
+device mosfet pfet -245 -43 -244 -42 2 18 "vdd" "pc" 4 0 "vdd" 18 0 "bl" 18 0
+subcap "pc" -510.438
+subcap "gnd" -123.914
