@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1636472228
+timestamp 1637430661
 << metal2 >>
 rect 2 -182 5 14
 rect 35 -182 38 14
@@ -20,27 +20,23 @@ use wd1  wd1_3
 timestamp 1636469439
 transform 1 0 269 0 1 -97
 box -148 -220 -97 -70
-use wd1  wd1_5
-timestamp 1636469439
-transform 1 0 353 0 1 -97
-box -148 -220 -97 -70
 use wd1  wd1_4
 timestamp 1636469439
 transform 1 0 311 0 1 -97
 box -148 -220 -97 -70
-use wd1  wd1_7
+use wd1  wd1_5
 timestamp 1636469439
-transform 1 0 437 0 1 -97
+transform 1 0 353 0 1 -97
 box -148 -220 -97 -70
 use wd1  wd1_6
 timestamp 1636469439
 transform 1 0 395 0 1 -97
 box -148 -220 -97 -70
-use 6T-cell1  6T-cell1_11 ~/lab/magic/sram/6T-cell
-timestamp 1636470524
-transform 1 0 274 0 1 -38
-box -191 -8 -149 48
-use 6T-cell1  6T-cell1_3
+use wd1  wd1_7
+timestamp 1636469439
+transform 1 0 437 0 1 -97
+box -148 -220 -97 -70
+use 6T-cell1  6T-cell1_3 ~/lab/magic/sram/6T-cell
 timestamp 1636470524
 transform 1 0 232 0 1 -38
 box -191 -8 -149 48
@@ -64,6 +60,10 @@ use sa2  sa2_1
 timestamp 1636469681
 transform 1 0 38 0 1 -99
 box 0 -65 48 11
+use 6T-cell1  6T-cell1_11
+timestamp 1636470524
+transform 1 0 274 0 1 -38
+box -191 -8 -149 48
 use 6T-cell1  6T-cell1_4
 timestamp 1636470524
 transform 1 0 274 0 -1 -50
@@ -72,14 +72,6 @@ use sa2  sa2_2
 timestamp 1636469681
 transform 1 0 80 0 1 -99
 box 0 -65 48 11
-use 6T-cell1  6T-cell1_14
-timestamp 1636470524
-transform 1 0 400 0 1 -38
-box -191 -8 -149 48
-use 6T-cell1  6T-cell1_13
-timestamp 1636470524
-transform 1 0 358 0 1 -38
-box -191 -8 -149 48
 use 6T-cell1  6T-cell1_12
 timestamp 1636470524
 transform 1 0 316 0 1 -38
@@ -92,26 +84,42 @@ use sa2  sa2_3
 timestamp 1636469681
 transform 1 0 122 0 1 -99
 box 0 -65 48 11
-use 6T-cell1  6T-cell1_7
+use 6T-cell1  6T-cell1_13
 timestamp 1636470524
-transform 1 0 400 0 -1 -50
+transform 1 0 358 0 1 -38
 box -191 -8 -149 48
 use 6T-cell1  6T-cell1_6
 timestamp 1636470524
 transform 1 0 358 0 -1 -50
 box -191 -8 -149 48
-use sa2  sa2_5
-timestamp 1636469681
-transform 1 0 206 0 1 -99
-box 0 -65 48 11
 use sa2  sa2_4
 timestamp 1636469681
 transform 1 0 164 0 1 -99
+box 0 -65 48 11
+use 6T-cell1  6T-cell1_14
+timestamp 1636470524
+transform 1 0 400 0 1 -38
+box -191 -8 -149 48
+use 6T-cell1  6T-cell1_7
+timestamp 1636470524
+transform 1 0 400 0 -1 -50
+box -191 -8 -149 48
+use sa2  sa2_5
+timestamp 1636469681
+transform 1 0 206 0 1 -99
 box 0 -65 48 11
 use 6T-cell1  6T-cell1_15
 timestamp 1636470524
 transform 1 0 442 0 1 -38
 box -191 -8 -149 48
+use 6T-cell1  6T-cell1_8
+timestamp 1636470524
+transform 1 0 442 0 -1 -50
+box -191 -8 -149 48
+use sa2  sa2_6
+timestamp 1636469681
+transform 1 0 248 0 1 -99
+box 0 -65 48 11
 use 6T-cell1  6T-cell1_10
 timestamp 1636470524
 transform 1 0 484 0 1 -38
@@ -120,23 +128,11 @@ use 6T-cell1  6T-cell1_9
 timestamp 1636470524
 transform 1 0 484 0 -1 -50
 box -191 -8 -149 48
-use 6T-cell1  6T-cell1_8
-timestamp 1636470524
-transform 1 0 442 0 -1 -50
-box -191 -8 -149 48
 use sa2  sa2_7
 timestamp 1636469681
 transform 1 0 290 0 1 -99
 box 0 -65 48 11
-use sa2  sa2_6
-timestamp 1636469681
-transform 1 0 248 0 1 -99
-box 0 -65 48 11
-use pc1  pc1_2 ~/lab/magic/sram/pc
-timestamp 1636470790
-transform 1 0 340 0 1 155
-box -257 -57 -215 -12
-use pc1  pc1_0
+use pc1  pc1_0 ~/lab/magic/sram/pc
 timestamp 1636470790
 transform 1 0 298 0 1 155
 box -257 -57 -215 -12
@@ -144,10 +140,6 @@ use pc1  pc1_1
 timestamp 1636470790
 transform 1 0 256 0 1 155
 box -257 -57 -215 -12
-use 6T-cell1  6T-cell1_26
-timestamp 1636470524
-transform 1 0 274 0 1 60
-box -191 -8 -149 48
 use 6T-cell1  6T-cell1_25
 timestamp 1636470524
 transform 1 0 232 0 1 60
@@ -155,10 +147,6 @@ box -191 -8 -149 48
 use 6T-cell1  6T-cell1_24
 timestamp 1636470524
 transform 1 0 190 0 1 60
-box -191 -8 -149 48
-use 6T-cell1  6T-cell1_18
-timestamp 1636470524
-transform 1 0 274 0 -1 48
 box -191 -8 -149 48
 use 6T-cell1  6T-cell1_17
 timestamp 1636470524
@@ -168,64 +156,92 @@ use 6T-cell1  6T-cell1_16
 timestamp 1636470524
 transform 1 0 190 0 -1 48
 box -191 -8 -149 48
-use pc1  pc1_5
+use pc1  pc1_2
 timestamp 1636470790
-transform 1 0 466 0 1 155
+transform 1 0 340 0 1 155
 box -257 -57 -215 -12
-use pc1  pc1_4
-timestamp 1636470790
-transform 1 0 424 0 1 155
-box -257 -57 -215 -12
+use 6T-cell1  6T-cell1_26
+timestamp 1636470524
+transform 1 0 274 0 1 60
+box -191 -8 -149 48
+use 6T-cell1  6T-cell1_18
+timestamp 1636470524
+transform 1 0 274 0 -1 48
+box -191 -8 -149 48
 use pc1  pc1_3
 timestamp 1636470790
 transform 1 0 382 0 1 155
 box -257 -57 -215 -12
-use 6T-cell1  6T-cell1_29
-timestamp 1636470524
-transform 1 0 400 0 1 60
-box -191 -8 -149 48
-use 6T-cell1  6T-cell1_28
-timestamp 1636470524
-transform 1 0 358 0 1 60
-box -191 -8 -149 48
 use 6T-cell1  6T-cell1_27
 timestamp 1636470524
 transform 1 0 316 0 1 60
-box -191 -8 -149 48
-use 6T-cell1  6T-cell1_21
-timestamp 1636470524
-transform 1 0 400 0 -1 48
-box -191 -8 -149 48
-use 6T-cell1  6T-cell1_20
-timestamp 1636470524
-transform 1 0 358 0 -1 48
 box -191 -8 -149 48
 use 6T-cell1  6T-cell1_19
 timestamp 1636470524
 transform 1 0 316 0 -1 48
 box -191 -8 -149 48
-use pc1  pc1_7
+use pc1  pc1_4
 timestamp 1636470790
-transform 1 0 550 0 1 155
+transform 1 0 424 0 1 155
 box -257 -57 -215 -12
+use 6T-cell1  6T-cell1_28
+timestamp 1636470524
+transform 1 0 358 0 1 60
+box -191 -8 -149 48
+use 6T-cell1  6T-cell1_20
+timestamp 1636470524
+transform 1 0 358 0 -1 48
+box -191 -8 -149 48
+use pc1  pc1_5
+timestamp 1636470790
+transform 1 0 466 0 1 155
+box -257 -57 -215 -12
+use 6T-cell1  6T-cell1_29
+timestamp 1636470524
+transform 1 0 400 0 1 60
+box -191 -8 -149 48
+use 6T-cell1  6T-cell1_21
+timestamp 1636470524
+transform 1 0 400 0 -1 48
+box -191 -8 -149 48
 use pc1  pc1_6
 timestamp 1636470790
 transform 1 0 508 0 1 155
+box -257 -57 -215 -12
+use 6T-cell1  6T-cell1_30
+timestamp 1636470524
+transform 1 0 442 0 1 60
+box -191 -8 -149 48
+use 6T-cell1  6T-cell1_22
+timestamp 1636470524
+transform 1 0 442 0 -1 48
+box -191 -8 -149 48
+use pc1  pc1_7
+timestamp 1636470790
+transform 1 0 550 0 1 155
 box -257 -57 -215 -12
 use 6T-cell1  6T-cell1_31
 timestamp 1636470524
 transform 1 0 484 0 1 60
 box -191 -8 -149 48
-use 6T-cell1  6T-cell1_30
-timestamp 1636470524
-transform 1 0 442 0 1 60
-box -191 -8 -149 48
 use 6T-cell1  6T-cell1_23
 timestamp 1636470524
 transform 1 0 484 0 -1 48
 box -191 -8 -149 48
-use 6T-cell1  6T-cell1_22
+use wd1  wd1_8
+timestamp 1636469439
+transform 1 0 899 0 1 209
+box -148 -220 -97 -70
+use sa2  sa2_8
+timestamp 1636469681
+transform 1 0 662 0 1 90
+box 0 -65 48 11
+use pc1  pc1_8
+timestamp 1636470790
+transform 1 0 827 0 1 102
+box -257 -57 -215 -12
+use 6T-cell1  6T-cell1_32
 timestamp 1636470524
-transform 1 0 442 0 -1 48
+transform 1 0 663 0 1 46
 box -191 -8 -149 48
 << end >>
